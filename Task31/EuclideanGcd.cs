@@ -3,13 +3,13 @@ using System.Diagnostics;
 
 public static class EuclideanGcd
 {
-    // Метод для вычисления НОД двух чисел
+    
     public static int Calculate(int a, int b)
     {
         return Gcd(a, b);
     }
 
-    // Метод для вычисления НОД двух чисел с измерением времени
+    
     public static int Calculate(int a, int b, out TimeSpan elapsed)
     {
         var stopwatch = Stopwatch.StartNew();
@@ -19,7 +19,7 @@ public static class EuclideanGcd
         return result;
     }
 
-    // Метод для вычисления НОД трёх чисел с измерением времени
+    
     public static int Calculate(int a, int b, int c, out TimeSpan elapsed)
     {
         var stopwatch = Stopwatch.StartNew();
@@ -29,7 +29,7 @@ public static class EuclideanGcd
         return result;
     }
 
-    // Метод для вычисления НОД любого количества чисел
+   
     public static int Calculate(params int[] numbers)
     {
         if (numbers == null || numbers.Length == 0)
@@ -43,7 +43,7 @@ public static class EuclideanGcd
         return result;
     }
 
-    // Метод для вычисления НОД любого количества чисел с измерением времени
+    
     public static int Calculate(out TimeSpan elapsed, params int[] numbers)
     {
         if (numbers == null || numbers.Length == 0)
